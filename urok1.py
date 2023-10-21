@@ -22,7 +22,12 @@ class Animal:
         print(f"Type: {self.type}, weight: {self.weight} kg")
 dog = Animal(type="dog", weight=50)
 dog.call()
+
 cat = Animal(type="cat", weight=25)
 cat.call()
+
 parrot = Animal("parrot", 10)
 parrot.call()
+
+capybara = Animal(type="capybara", weight=40)
+capybara.call()
