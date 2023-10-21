@@ -40,9 +40,12 @@ class Movie:
         self.views = views
         self.length = length
         self.producer_country = madein
-        print(
-            f"New movie! Name: {self.name}, views: {self.views}, length: {self.length} hours, made in {self.producer_country}")
+        print(f"New movie! Name: {self.name}, views: {self.views}, length: {self.length} hours, made in {self.producer_country}")
+    def see_movie(self, howmany):
+        self.views += howmany
+        print(f"New change! Name: {self.name}, views: {self.views}, length: {self.length} hours, made in {self.producer_country}")
 
 breaking_bad = Movie("Breaking Bad", 0, 2.5, "USA")
 squid_game = Movie("Squid Game", 0, 3, "South Korea")
+breaking_bad.see_movie(1000000)
 print(f"Made movies in total: {made_movies}")
