@@ -33,7 +33,7 @@
 # capybara.call()
 made_movies = 0
 class Movie:
-    def __init__(self, name, views, length, madein):
+    def __init__(self, name, length, madein, views=0):
         global made_movies
         made_movies += 1
         self.name = name
@@ -45,7 +45,8 @@ class Movie:
         self.views += howmany
         print(f"New change! Name: {self.name}, views: {self.views}, length: {self.length} hours, made in {self.producer_country}")
 
-breaking_bad = Movie("Breaking Bad", 0, 2.5, "USA")
-squid_game = Movie("Squid Game", 0, 3, "South Korea")
+breaking_bad = Movie("Breaking Bad", 2.5, "USA")
+squid_game = Movie("Squid Game", 3, "South Korea")
+fnaf_movie = Movie("FNAF", 1.5, "USA")
 breaking_bad.see_movie(1000000)
 print(f"Made movies in total: {made_movies}")
