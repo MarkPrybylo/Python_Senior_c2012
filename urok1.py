@@ -6,8 +6,8 @@
 #     b += a
 #     i += 1
 # print(f"I added {a} {i} times")
-a = ["pineapple", "pear", "apple", "lemon", "chocolate", "peach", "candy"]
+a = ["pineapple", "pear", "cake", "apple", "lemon", "chocolate", "peach", "candy"]
 for i in a:
-    if i == "chocolate" or i == "candy":
+    if i == "chocolate" or i == "candy" or i == "cake":
         a.remove(i)
 print(a)
