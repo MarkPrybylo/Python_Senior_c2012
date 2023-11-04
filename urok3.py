@@ -29,7 +29,9 @@ if sum2 > sum:
             c += 1
         if a == sum:
             break
-    print(f"Алгоритм завершений. Вам потрібно {b} монет по {nominal1} та {c} монет по {nominal2}:\n{sum} = {nominal1 * b} + {nominal2 * c}")
+    print(f"Алгоритм завершений. Вам потрібно {b} монет по {nominal1}")
+    if c > 0:
+        print(f"та {c} монет по {nominal2}:\n{sum} = {nominal1 * b} + {nominal2 * c}")
 else:
     sum2 = a + nominal2
     print(f"{sum2} = {a} + {nominal2}")
@@ -38,6 +40,8 @@ else:
         c += 1
         sum2 += nominal2
         print(f"{sum2} = {sum2} + {nominal2}")
-    print(f"Алгоритм завершений. Вам потрібно {b} монет по {nominal1} та {c} монет по {nominal2}:\n{sum} = {nominal1 * b} + {nominal2 * c}.")
+    print(f"Алгоритм завершений. Вам потрібно {b} монет по {nominal1}")
+    if c > 0:
+        print(f"та {c} монет по {nominal2}:\n{sum} = {nominal1 * b} + {nominal2 * c}.")
     if sum2 != sum:
         print(f"Правда вам залишеться ще {sum2 - sum} монет")
