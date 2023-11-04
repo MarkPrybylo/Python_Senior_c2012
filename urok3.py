@@ -23,6 +23,7 @@ if sum2 > sum:
         if a > sum:
             print(f"\n{a} ({a - nominal2} + {nominal2}) > {sum}\n")
             check_first_n()
+            c = 0
         else:
             print(f"{a} = {a - nominal2} + {nominal2}")
             c += 1
