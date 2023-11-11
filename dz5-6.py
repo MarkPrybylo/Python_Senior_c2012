@@ -26,7 +26,7 @@ while menu.lower() != "стоп":
         while tries < maxtries:
             guess = int(input("\nВгадай число: "))
             if guess > num:
-                print(f"Число менше {num}")
+                print("Число менше")
                 tries += 1
             elif guess < num:
                 print("Число більше")
